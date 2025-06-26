@@ -1,0 +1,11 @@
+name: print
+
+on:
+  workflow_dispatch:
+
+jobs:
+  print:
+    runs-on: ubuntu-latest
+    steps:
+      - run: env
+      - run: echo ${{ github }}
